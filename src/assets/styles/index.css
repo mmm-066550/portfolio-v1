@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "luggage";
+  font-style: normal;
+  src: url(../fonts/luggage/LuggageThin.woff2);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "luggage";
+  font-style: normal;
+  src: url(../fonts/luggage/LuggageLight.woff2);
+  font-weight: 200;
+}
+@font-face {
+  font-family: "luggage";
+  font-style: normal;
+  src: url(../fonts/luggage/LuggageRegular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "luggage";
+  font-style: normal;
+  src: url(../fonts/luggage/LuggageHeavy.woff2);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "luggage";
+  font-style: oblique;
+  src: url(../fonts/luggage/LuggageLightOblique.woff2);
+  font-weight: 200;
+}
+@font-face {
+  font-family: "luggage";
+  font-style: oblique;
+  src: url(../fonts/luggage/LuggageRegularOblique.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "luggage";
+  font-style: oblique;
+  src: url(../fonts/luggage/LuggageHeavyOblique.woff2);
+  font-weight: 600;
+}
+body {
+  font-family: "luggage";
+  font-weight: 400;
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: #111119;
+}
