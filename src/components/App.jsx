@@ -42,6 +42,9 @@ export default function App() {
     document.body.classList.remove("dark");
     document.body.classList.remove("light");
     document.body.classList.add(mode);
+    document
+      .querySelector('meta[name="description"]')
+      .setAttribute("content", mode === "dark" ? "#111119" : "#fff");
   }, [mode]);
   useLayoutEffect(() => {
     document.body.classList.remove("red");
