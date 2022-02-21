@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useEffect, useState } from "react";
-// import SplashScreen from "./SplashScreen";
+import SplashScreen from "./SplashScreen";
 // import Dots from "./Dots";
 import { reactLocalStorage } from "reactjs-localstorage";
 import DetectDarkMode from "detect-dark-mode";
@@ -24,6 +24,7 @@ import "../assets/styles/index.sass";
 export default function App() {
   useEffect(() => {
     AOS.init({ duration: 3000 });
+    window.addEventListener("load", AOS.refresh);
     document.getElementById("root").addEventListener("scroll", () => {
       AOS.refresh();
     });
@@ -48,13 +49,13 @@ export default function App() {
     document.body.classList.remove("blue");
     document.body.classList.add(color);
   }, [color]);
-  const [loaded, setloaded] = useState(true);
+  const [loaded, setloaded] = useState(false);
   useLayoutEffect(() => {
     setTimeout(() => {
       setloaded(true);
     }, 3000);
   }, []);
-  // if (!loaded) return <SplashScreen />;
+  if (!loaded) return <SplashScreen />;
   if (loaded)
     return (
       <>
