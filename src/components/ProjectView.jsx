@@ -1,6 +1,5 @@
 import React from "react";
 import "../assets/styles/project-view.sass";
-import netflix from "../assets/images/projects/netflix.png";
 
 export default function ProjectView({ project }) {
   return (
@@ -22,10 +21,10 @@ export default function ProjectView({ project }) {
             })}
           </div>
           <div className="project-links">
-            <a href={project.live_preview} target="_blank">
+            <a href={project.live_preview} target="_blank" rel="noreferrer">
               <i className="fal fa-external-link"></i>
             </a>
-            <a href={project.repo} target="_blank">
+            <a href={project.repo} target="_blank" rel="noreferrer">
               <i className="fal fa-code-branch"></i>
             </a>
           </div>
