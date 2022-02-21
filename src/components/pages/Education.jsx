@@ -10,7 +10,7 @@ export default function Education() {
       </div>
       <Section dir="ltr" head="education">
         <div data-aos="zoom-in-right" className="col-12 col-md-5">
-          <div className="univ-logo">
+          <div className="univ-logo mb-5">
             <ThebesLogo />
           </div>
         </div>
