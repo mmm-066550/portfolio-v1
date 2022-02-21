@@ -9,7 +9,7 @@ import SocialList from "./SocialList";
 import "../assets/styles/app-main.sass";
 import About from "./pages/About";
 import Education from "./pages/Education";
-import AOS from "aos";
+// import AOS from "aos";
 import GridTest from "./GridTest";
 // import Portfolio from "./pages/Portfolio";
 // import Contact from "./pages/Contact";
@@ -17,7 +17,7 @@ import ModeSettings from "./ModeSettings";
 
 // STYLES
 import "bootstrap/dist/css/bootstrap.min.css";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import "../assets/styles/fonts.sass";
 import "../assets/styles/index.sass";
 

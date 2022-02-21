@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/styles/hero.sass";
-// import Glitch from "react-glitch-text";
+import Glitch from "react-glitch-text";
 import { ReactComponent as ReactLogo } from "../assets/images/animated-line.svg";
 
 import { RandomReveal } from "react-random-reveal";
@@ -24,12 +24,12 @@ export default function Hero() {
             </p>
             {/* NAME */}
             <div className="py-3 text-center name">
-              {/* <Glitch> */}
-              {<RandomReveal isPlaying duration={3} characters="Moustapha" />}
-              {/* </Glitch> */}
-              {/* <Glitch> */}
-              {<RandomReveal isPlaying duration={3} characters="Mahmoud" />}
-              {/* </Glitch> */}
+              <Glitch>
+                {<RandomReveal isPlaying duration={3} characters="Moustapha" />}
+              </Glitch>
+              <Glitch>
+                {<RandomReveal isPlaying duration={3} characters="Mahmoud" />}
+              </Glitch>
             </div>
             <p className="m-0 tag-placeholder">
               <span className="d-none d-sm-inline tag-span">{"<p>"}</span>

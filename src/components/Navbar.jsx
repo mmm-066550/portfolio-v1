@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/styles/navbar.sass";
 import { RandomReveal } from "react-random-reveal";
-// import Glitch from "react-glitch-text";
+import Glitch from "react-glitch-text/dist/index";
 
 export default function Navbar() {
   const nav_routes = [
@@ -46,9 +46,15 @@ export default function Navbar() {
           <div className="col-12 col-md-4 py-md-2 d-flex justify-content-center align-items-center">
             <div data-aos="zoom-in" className="app-logo personal-logo-brand">
               <a href="/">
-                {/* <Glitch> */}
-                {<RandomReveal isPlaying duration={3} characters="mmm066550" />}
-                {/* </Glitch> */}
+                <Glitch>
+                  {
+                    <RandomReveal
+                      isPlaying
+                      duration={3}
+                      characters="mmm066550"
+                    />
+                  }
+                </Glitch>
               </a>
             </div>
           </div>
