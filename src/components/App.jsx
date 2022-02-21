@@ -12,7 +12,7 @@ import Education from "./pages/Education";
 import AOS from "aos";
 import GridTest from "./GridTest";
 import Portfolio from "./pages/Portfolio";
-// import Contact from "./pages/Contact";
+import Contact from "./pages/Contact";
 import ModeSettings from "./ModeSettings";
 
 // STYLES
@@ -75,7 +75,7 @@ export default function App() {
               <About />
               <Education />
               <Portfolio />
-              {/* <Contact /> */}
+              <Contact />
             </div>
           </div>
         </main>
