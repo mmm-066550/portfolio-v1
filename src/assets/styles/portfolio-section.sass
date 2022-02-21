@@ -1,0 +1,73 @@
+@import './variables'
+
+#portfolio
+    position: relative
+    &::after
+        position: absolute
+        bottom: 0%
+        left: 50%
+        width: 3px
+        background: var(--main-color)
+        content: ''
+        height: 0px
+        transition: height 2s linear
+        transform: translate(-50%,35%)
+        z-index: 1
+    &::before
+        position: absolute
+        z-index: 2
+        bottom: -6%
+        left: 50%
+        width: 11px
+        background: var(--color-text)
+        content: ''
+        height: 11px
+        border-radius: 50%
+        display: flex
+        transform: translate(-50%,40%)
+#portfolio.aos-animate
+    &::after
+        height: 130px
+        
+
+#portfolio-works-container
+    .nav-btns
+        font-family: $sec-font
+        font-size: 1.5rem
+        display: flex
+        justify-content: space-between
+        .prev-work-btn,
+        .next-work-btn
+            border: 0
+            outline: none
+            display: inline-flex
+            align-items: center
+            background: transparent
+            padding: 0
+            color: var(--color-text)
+            i
+                color: var(--main-color)
+                font-size: 3.5rem
+            &:disabled
+                opacity: 0.2
+                cursor: not-allowed
+.fixed
+    z-index: 10
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+    writing-mode: tb
+    .projects-bullets
+        .swiper-pagination-bullet
+            opacity: 1
+            width: 15px
+            height: 15px
+            margin: .75rem 0
+            border-radius: 0
+            transform: rotate(45deg)
+            border: 3px solid var(--main-color)
+            background: var(--main-color-trans)
+            transition: $transition
+        .swiper-pagination-bullet-active
+            background: var(--main-color)

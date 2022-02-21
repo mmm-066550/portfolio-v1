@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./assets/styles/index.css";
-import Dots from "./components/Dots";
+import App from "./components/App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <span>Moustapha's Portfolio comming soon{<Dots />}</span>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

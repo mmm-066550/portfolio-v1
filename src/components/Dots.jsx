@@ -8,9 +8,9 @@ export default function Dots() {
       if (length < 3) {
         setLength(length + 1);
       } else {
-        setLength(1);
+        setLength(0);
       }
-    }, 500);
+    }, 300);
   }, [length]);
 
   useEffect(() => {
@@ -19,5 +19,10 @@ export default function Dots() {
     setDots(arr.join(""));
   }, [length]);
 
-  return <span>{dots}</span>;
+  return (
+    <div className="d-flex">
+      <div>LOADING</div>
+      <div>{dots}</div>
+    </div>
+  );
 }
