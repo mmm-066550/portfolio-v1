@@ -65,7 +65,7 @@ export default function App() {
           setmode={setmode}
           setcolor={setcolor}
         />
-        <GridTest />
+        {/* <GridTest /> */}
         <main id="app-main" className="container">
           <div className="row g-0">
             <div className="offset-1 col-10">
