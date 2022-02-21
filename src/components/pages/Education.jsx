@@ -39,7 +39,7 @@ export default function Education() {
               <p>{data.degree}</p>
               <p className="univ">{data.university}</p>
               <p className="interval">
-                <i className="fal fa-calendar"></i>
+                <i className="fal me-3 fa-calendar"></i>
                 {data.interval}
               </p>
             </div>
