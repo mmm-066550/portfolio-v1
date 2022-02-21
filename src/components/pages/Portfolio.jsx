@@ -11,8 +11,8 @@ import "swiper/css/scrollbar";
 import "../../assets/styles/portfolio-section.sass";
 export default function Portfolio() {
   return (
-    <div data-aos="fade" id="portfolio">
-      <div className="fixed">
+    <div className="pt-xl-4" data-aos="fade" id="portfolio">
+      <div className="d-none d-xl-flex fixed">
         <div className="projects-bullets"></div>
       </div>
       <Section dir="rtl" head="my portfolio">
@@ -50,12 +50,16 @@ export default function Portfolio() {
               </Swiper>
               <div className="nav-btns">
                 <button className="prev-work-btn">
-                  <i class="fad fa-chevron-double-left me-3"></i>
-                  <p className="m-0">Prev Project</p>
+                  <i className="fad fa-chevron-double-left me-3"></i>
+                  <p className="m-0">
+                    <span className="d-none d-md-block txt">Prev Project</span>
+                  </p>
                 </button>
                 <button className="next-work-btn">
-                  <p className="m-0">Next Project</p>
-                  <i class="fad fa-chevron-double-right ms-3"></i>
+                  <p className="m-0">
+                    <span className="d-none d-md-block txt">Next Project</span>
+                  </p>
+                  <i className="fad fa-chevron-double-right ms-3"></i>
                 </button>
               </div>
             </div>

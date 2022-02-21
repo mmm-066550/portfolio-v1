@@ -11,7 +11,7 @@ import About from "./pages/About";
 import Education from "./pages/Education";
 import AOS from "aos";
 import GridTest from "./GridTest";
-// import Portfolio from "./pages/Portfolio";
+import Portfolio from "./pages/Portfolio";
 // import Contact from "./pages/Contact";
 import ModeSettings from "./ModeSettings";
 
@@ -74,7 +74,7 @@ export default function App() {
               <Hero />
               <About />
               <Education />
-              {/* <Portfolio /> */}
+              <Portfolio />
               {/* <Contact /> */}
             </div>
           </div>

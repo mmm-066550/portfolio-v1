@@ -16,7 +16,7 @@
     &::before
         position: absolute
         z-index: 2
-        bottom: -6%
+        bottom: -5%
         left: 50%
         width: 11px
         background: var(--color-text)
@@ -27,9 +27,7 @@
         transform: translate(-50%,40%)
 #portfolio.aos-animate
     &::after
-        height: 130px
-        
-
+        height: 100px
 #portfolio-works-container
     .nav-btns
         font-family: $sec-font
@@ -47,7 +45,7 @@
             color: var(--color-text)
             i
                 color: var(--main-color)
-                font-size: 3.5rem
+                font-size: 3rem
             &:disabled
                 opacity: 0.2
                 cursor: not-allowed
@@ -71,3 +69,9 @@
             transition: $transition
         .swiper-pagination-bullet-active
             background: var(--main-color)
+
+@media screen and (max-width: 1199px) 
+    #portfolio
+        &::after,
+        &::before
+           display: none

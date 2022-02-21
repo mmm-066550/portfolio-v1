@@ -4,14 +4,17 @@ import netflix from "../assets/images/projects/netflix.png";
 
 export default function ProjectView() {
   return (
-    <div className="project-view py-5 mb-5 row g-0">
+    <div className="project-view  py-4 py-lg-5 mb-lg-3 row g-0">
       <span className="connect-line"></span>
-      <div className="col-6">
+      <div className="col-12 col-lg-6">
         <div data-aos="fade-up" className="project-info">
           <p className="project-number">
             Project <span>#01</span>
           </p>
           <p className="project-name">Netflix Clone</p>
+          <div className="my-4 d-lg-none project-img">
+            <img src={netflix} alt="project-thumbnail" />
+          </div>
           <p className="project-overview">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
             similique, fugiat incidunt cum ullam, harum ratione nisi cupiditate
@@ -25,15 +28,15 @@ export default function ProjectView() {
           </div>
           <div className="project-links">
             <a href="/" target="_blank">
-              <i class="fal fa-external-link"></i>
+              <i className="fal fa-external-link"></i>
             </a>
             <a href="/" target="_blank">
-              <i class="fal fa-code-branch"></i>
+              <i className="fal fa-code-branch"></i>
             </a>
           </div>
         </div>
       </div>
-      <div className="col-6">
+      <div className="col-6 d-none d-lg-flex">
         <div data-aos="fade-down" className="project-thumbnail">
           <img src={netflix} alt="project-thumbnail" />
         </div>
