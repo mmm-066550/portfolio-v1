@@ -1,6 +1,5 @@
 import React, { useLayoutEffect, useEffect, useState } from "react";
 import SplashScreen from "./SplashScreen";
-// import Dots from "./Dots";
 import { reactLocalStorage } from "reactjs-localstorage";
 import DetectDarkMode from "detect-dark-mode";
 import Hero from "./Hero";
@@ -10,7 +9,7 @@ import "../assets/styles/app-main.sass";
 import About from "./pages/About";
 import Education from "./pages/Education";
 import AOS from "aos";
-import GridTest from "./GridTest";
+// import GridTest from "./GridTest";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import ModeSettings from "./ModeSettings";

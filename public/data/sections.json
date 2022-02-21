@@ -1,0 +1,9 @@
+{
+  "sections": [
+    { "i": 1, "name": "about", "path": "/#about" },
+    { "i": 2, "name": "education", "path": "/#education" },
+    { "i": 3, "name": "projects", "path": "/#portfolio" },
+    { "i": 4, "name": "contact", "path": "/#contact" }
+  ],
+  "name": "mmm066550"
+}

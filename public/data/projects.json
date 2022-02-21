@@ -1,0 +1,28 @@
+[
+  {
+    "index": 1,
+    "title": "Netflix Clone",
+    "tools": ["ReactJs", "Redux", "SwiperJs", "TMDB", "2embed"],
+    "live_preview": "https://netflix-mmm066550.vercel.app",
+    "repo": "https://github.com/mmm-066550/Netflix_React_Clone",
+    "thubmnail": "../../data/images/projects/netflix.png",
+    "overview": "Netflix React Clone is a cloned single page application of Netflix website using ReactJS and ReduxJs for state management "
+  },
+  {
+    "index": 2,
+    "title": "MEBOOK",
+    "overview": "(📚 MEBOOK) e-books store Website app with ReactJs and ReduxJs (client-side) and NodeJS for backend server (API)",
+    "tools": [
+      "ReactJs",
+      "NodeJs",
+      "ExpressJs",
+      "MongoDB",
+      "Redux",
+      "Sass",
+      "Axios"
+    ],
+    "live_preview": "https://mebook.vercel.app",
+    "repo": "https://github.com/mmm-066550/MEBOOK-Client",
+    "thubmnail": "../../data/images/projects/mebook.png"
+  }
+]
