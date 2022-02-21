@@ -43,7 +43,7 @@ export default function App() {
     document.body.classList.remove("light");
     document.body.classList.add(mode);
     document
-      .querySelector('meta[name="description"]')
+      .querySelector('meta[name="theme-color"]')
       .setAttribute("content", mode === "dark" ? "#111119" : "#fff");
   }, [mode]);
   useLayoutEffect(() => {
