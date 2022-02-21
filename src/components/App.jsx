@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useState } from "react";
-import SplashScreen from "./SplashScreen";
+// import SplashScreen from "./SplashScreen";
 // import Dots from "./Dots";
 import { reactLocalStorage } from "reactjs-localstorage";
 import DetectDarkMode from "detect-dark-mode";
@@ -11,8 +11,8 @@ import About from "./pages/About";
 import Education from "./pages/Education";
 import AOS from "aos";
 import GridTest from "./GridTest";
-import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
+// import Portfolio from "./pages/Portfolio";
+// import Contact from "./pages/Contact";
 import ModeSettings from "./ModeSettings";
 
 // STYLES
@@ -68,7 +68,7 @@ export default function App() {
       setloaded(true);
     }, 3000);
   }, []);
-  if (!loaded) return <SplashScreen />;
+  // if (!loaded) return <SplashScreen />;
   if (loaded)
     return (
       <>
