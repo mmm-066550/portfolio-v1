@@ -24,10 +24,10 @@ export default function Hero() {
             </p>
             {/* NAME */}
             <div className="py-3 text-center name">
-              <Glitch>
+              <Glitch className="name-g">
                 {<RandomReveal isPlaying duration={3} characters="Moustapha" />}
               </Glitch>
-              <Glitch>
+              <Glitch className="name-g">
                 {<RandomReveal isPlaying duration={3} characters="Mahmoud" />}
               </Glitch>
             </div>
