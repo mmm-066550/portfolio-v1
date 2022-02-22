@@ -2,29 +2,29 @@
 
 #portfolio
     position: relative
-    // &::after
-    //     position: absolute
-    //     bottom: 0%
-    //     left: 50%
-    //     width: 3px
-    //     background: var(--main-color)
-    //     content: ''
-    //     height: 0px
-    //     transition: height 2s linear
-    //     transform: translate(-50%,35%)
-    //     z-index: 1
-    // &::before
-    //     position: absolute
-    //     z-index: 2
-    //     bottom: -5%
-    //     left: 50%
-    //     width: 11px
-    //     background: var(--color-text)
-    //     content: ''
-    //     height: 11px
-    //     border-radius: 50%
-    //     display: flex
-    //     transform: translate(-50%,40%)
+    &::after
+        position: absolute
+        bottom: 0%
+        left: 50%
+        width: 3px
+        background: var(--main-color)
+        content: ''
+        height: 00px
+        transition: height 2s linear
+        transform: translate(-50%,50%)
+        z-index: 1
+    &::before
+        position: absolute
+        z-index: 2
+        bottom: -50px
+        left: 50%
+        width: 11px
+        background: var(--color-text)
+        content: ''
+        height: 11px
+        border-radius: 50%
+        display: flex
+        transform: translate(-50%,50%)
 #portfolio.aos-animate
     &::after
         height: 100px
@@ -73,6 +73,6 @@
 
 @media screen and (max-width: 1199px) 
     #portfolio
-        &::after,
-        &::before
-           display: none
+        // &::after,
+        // &::before
+        //    display: none
