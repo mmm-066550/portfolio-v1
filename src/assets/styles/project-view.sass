@@ -9,6 +9,8 @@
                 mix-blend-mode: normal !important
                 opacity: 1 !important
     .project-info
+        display: flex
+        flex-direction: column
         z-index: 2
         .project-number
             font-family: $sec-font
@@ -23,6 +25,7 @@
         .project-tools
             display: flex
             flex-wrap: wrap
+            // background: yellow
             max-width: 320px
             span
                 font-size: 14px
@@ -39,11 +42,10 @@
                 width: 100%
                 height: 100%
                 mix-blend-mode: luminosity
-
         .project-overview
             color: var(--color-page-background)
             background: var(--main-color)
-            padding: .75rem 1.75rem
+            padding: 1rem 1.75rem
             font-weight: 500
             border-radius: .5rem
             max-width: 500px
@@ -75,4 +77,17 @@
             object-fit: cover
             background: #000
             mix-blend-mode: luminosity
+
+@media screen and (min-width: 991px) 
+    .project-view.invert
+        flex-direction: row-reverse
+        .project-info
+            align-items: flex-end
+        .project-thumbnail
+            right: auto
+            left: 0
+        .project-info
+            text-align: right
+        .project-links
+            justify-content: flex-end
             

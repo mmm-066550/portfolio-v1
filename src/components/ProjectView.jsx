@@ -1,12 +1,16 @@
 import React from "react";
 import "../assets/styles/project-view.sass";
 
-export default function ProjectView({ project }) {
+export default function ProjectView({ project, slider }) {
   return (
-    <div className="project-view  py-4 py-lg-5 mb-lg-3 row g-0">
+    <div
+      className={`project-view py-4 py-lg-5 mb-lg-3 row g-0 ${
+        !slider && project.index % 2 === 0 ? "invert" : ""
+      }`}
+    >
       <span className="connect-line"></span>
       <div className="col-12 col-lg-6">
-        <div data-aos="fade-up" className="project-info">
+        <div data-aos="zoom-in-left" className="project-info">
           <p className="project-number">
             Project <span>#0{project.index}</span>
           </p>
@@ -31,7 +35,7 @@ export default function ProjectView({ project }) {
         </div>
       </div>
       <div className="col-6 d-none d-lg-flex">
-        <div data-aos="fade-down" className="project-thumbnail">
+        <div data-aos="zoom-in-right" className="project-thumbnail">
           <img src={project.thubmnail} alt="project-thumbnail" />
         </div>
       </div>
