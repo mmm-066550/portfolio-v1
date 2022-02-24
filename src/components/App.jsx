@@ -77,7 +77,7 @@ export default function App() {
               <About />
               <Education />
               <Portfolio />
-              <Contact />
+//               <Contact />
             </div>
           </div>
         </main>
