@@ -9,7 +9,6 @@ import "../assets/styles/app-main.sass";
 import About from "./pages/About";
 import Education from "./pages/Education";
 import AOS from "aos";
-// import GridTest from "./GridTest";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import ModeSettings from "./ModeSettings";
@@ -37,7 +36,7 @@ export default function App() {
       : "light"
   );
   const [color, setcolor] = useState(reactLocalStorage.get("color") || "blue");
-  useLayoutEffect(() => {
+  useEffect(() => {
     document.body.classList.remove("dark");
     document.body.classList.remove("light");
     document.body.classList.add(mode);
@@ -68,7 +67,6 @@ export default function App() {
           setmode={setmode}
           setcolor={setcolor}
         />
-        {/* <GridTest /> */}
         <main id="app-main" className="container">
           <div className="row g-0">
             <div className="offset-1 col-10">
