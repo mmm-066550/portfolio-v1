@@ -8,7 +8,7 @@
       "Bootstrap",
       "Sass",
       "SpotifyApi",
-      "spotiyfSDK"
+      "spotifySDK"
     ],
     "live_preview": "https://spotify-mmm066550.vercel.app",
     "repo": "https://github.com/mmm-066550/spotify-nextjs-clone",
