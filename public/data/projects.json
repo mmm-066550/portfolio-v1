@@ -12,7 +12,7 @@
     ],
     "live_preview": "https://spotify-mmm066550.vercel.app",
     "repo": "https://github.com/mmm-066550/spotify-nextjs-clone",
-    "thubmnail": "../../data/images/projects/spotify-dark.png",
+    "thubmnail": "../../data/images/projects/spotify-light.png",
     "overview": "🎧🎵 Spotify clone app using spotify api and spotify SDK with React.js, Next.js and Redux"
   },
   {
