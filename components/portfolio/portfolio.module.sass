@@ -1,0 +1,57 @@
+@import '../../styles/variables'
+
+.portfolio
+    position: relative
+    &::after
+        position: absolute
+        bottom: 0%
+        left: 50%
+        width: 3px
+        background: var(--main-color)
+        content: ''
+        height: 00px
+        transition: height 2s linear
+        transform: translate(-50%,50%)
+        z-index: 1
+    &::before
+        position: absolute
+        z-index: 2
+        bottom: -50px
+        left: 50%
+        width: 11px
+        background: var(--color-text)
+        content: ''
+        height: 11px
+        border-radius: 50%
+        display: flex
+        transform: translate(-50%,50%)
+
+.portfolio_works_container
+    .nav_btns
+        font-family: $sec-font
+        font-size: 1.5rem
+        display: flex
+        justify-content: space-between
+        .prev_work_btn,
+        .next_work_btn
+            border: 0
+            outline: none
+            display: inline-flex
+            align-items: center
+            background: transparent
+            padding: 0
+            color: var(--color-text)
+            svg
+                color: var(--main-color)
+                font-size: 3rem
+            &:disabled
+                visibility: hidden
+                user-select: none
+                cursor: not-allowed
+.fixed
+    z-index: 10
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+    writing-mode: tb

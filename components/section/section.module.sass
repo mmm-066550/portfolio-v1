@@ -1,0 +1,36 @@
+@import '../../styles/variables'
+.app_section
+    position: relative
+    &::after
+        z-index: -1 !important
+        content: 'About'
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 0
+        user-select: none
+        writing-mode: tb
+        font-size: 6rem
+        font-family: $sec-font
+        color: var(--main-color-trans)
+        line-height: 12rem
+.app_section.right_bg
+    &::after
+        right: auto !important
+        transform: rotate(180deg) translateY(50%)
+        left: 0 !important
+.app_section.education
+    &::after
+        content: 'Education'!important
+.app_section.portfolio
+    &::after
+        content: 'Portfolio'!important
+.app_section.contact
+    &::after
+        content: 'Contact'!important
+
+
+@media screen and (max-width: 755px)
+    .app_section
+        &::after
+            display: none 

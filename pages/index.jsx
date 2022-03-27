@@ -1,9 +1,17 @@
 import Head from "next/head";
 import styles from "./index.module.sass";
-import Navbar from "../components/navbar";
 import { useEffect } from "react";
 import AOS from "aos";
 import axios from "axios";
+
+// COMPONENT
+import Navbar from "../components/navbar";
+import SocialLists from "../components/social-lists";
+import Hero from "../components/hero";
+import About from "../components/about";
+import Education from "../components/education";
+import Portfolio from "../components/portfolio";
+import ModeSettings from "../components/mode-settings";
 
 export default function App(props) {
   useEffect(() => {
@@ -23,14 +31,16 @@ export default function App(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Actual Page Components Wrapper Area */}
+      <SocialLists data={props.links} />
+      <ModeSettings />
       <main id="app-main" className={styles.container}>
         <div className="row g-0">
           <div className="offset-1 col-10">
             <Navbar data={props.sections} />
-            {/* <Hero /> */}
-            {/* <About /> */}
-            {/* <Education /> */}
-            {/* <Portfolio /> */}
+            <Hero data={props.info} />
+            <About data={props.about} />
+            <Education data={props.education} />
+            <Portfolio data={props.projects} />
           </div>
         </div>
       </main>
@@ -39,7 +49,7 @@ export default function App(props) {
 }
 
 export async function getStaticProps() {
-  const res = await axios.get("http://localhost:3000/api/data");
+  const res = await axios.get("http://0.0.0.0:3000/api/data");
   return {
     props: res.data,
   };

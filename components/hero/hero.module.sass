@@ -1,0 +1,217 @@
+@import '../../styles/variables'
+
+.app_hero
+    position: relative
+    .tag_placeholder
+        overflow: hidden
+        max-width: 100%
+        margin-left: -25px !important
+        color: var(--main-color)
+    .tag_span
+        color: $text-grey
+    .name
+        margin-top: 1rem
+        margin-bottom: 1rem
+        position: relative
+        &::before,
+        &::after
+            position: absolute
+            color: $text-grey
+            left: 0
+        &::after
+            top: 0
+            content: '<h1>'
+        &::before
+            content: '</h1>'
+            bottom: 0
+        p
+          display: block !important
+          margin-left: 25px
+          color: var(--color-text) !important
+          font-family: $sec-font
+          font-size: 5rem !important
+          line-height: 5rem
+          font-weight: 400
+.download_resume_area
+    display: flex
+    .resume_btn
+      transform: scale(1)
+      display: flex
+      justify-content: center
+      align-items: center
+      .outer
+        width: 220px
+        height: 220px
+        border: 2px dashed var(--main-color)
+        background: var(--main-color-trans)
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        position: relative
+        border-radius: 50%
+        &::before
+          content: '</>'
+          color: var(--main-color-trans)
+          font-size: 8rem
+          font-weight: 600
+          position: absolute
+          left: 50%
+          top: 50%
+          transform: translate(-50%,-50%) rotate(-45deg)
+        .arch
+            font-size: 2.55rem
+            content: ""
+            display: block
+            position: absolute
+            top: -13px
+            left: -13px
+            right: -13px
+            bottom: -13px
+            border-radius: 50%
+            border: 22px solid transparent
+            border-top-color: var(--main-color)
+            border-bottom-color: var(--main-color)
+            animation: spin 6s linear infinite
+            opacity: 0.5
+        .inner
+          border: 1px solid var(--color-text)
+          border-radius: 50%
+          width: 58%
+          height: 58%
+          display: flex
+          justify-content: center
+          align-items: center
+          color: var(--main-color)
+          position: relative
+          &::after
+            right: 0
+            bottom: 0
+            font-size: 2.55rem
+            content: "."
+            position: absolute
+            top: -15px
+            left: -15px
+            right: -15px
+            bottom: -15px
+            border-radius: 50%
+            border: 1px solid transparent
+            border-top-color: var(--color-text)
+            animation: spin 3s linear infinite
+            color: var(--main-color)
+          &::before
+            right: 0
+            bottom: 0
+            font-size: 2.55rem
+            content: "."
+            position: absolute
+            top: -28px
+            left: -28px
+            right: -28px
+            bottom: -28px
+            border-radius: 50%
+            border: 1px solid transparent
+            border-top-color: var(--color-text)
+            animation: spin 2s linear infinite
+            color: var(--main-color)
+          &:hover
+            background: var(--main-color)
+            color: var(--color-text)
+            .tag
+              &::after,&::before
+                color: var(--color-text)
+          .tag
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 100%
+            height: 100%
+            position: relative
+            font-weight: 600
+            &::before
+              position: absolute
+              content: '<>'
+              color: var(--main-color)
+              font-size: 2.5rem
+              font-weight: 400
+              font-family: $sec-font
+              left: 50%
+              top: 30px
+              line-height: 0
+              transform: translateX(-50%)
+            &::after
+              position: absolute
+              content: '</>'
+              color: var(--main-color)
+              font-size: 2.5rem
+              line-height: 0
+              font-weight: 400
+              font-family: $sec-font
+              left: 50%
+              bottom: 35px
+              transform: translateX(-50%)
+@-webkit-keyframes spin 
+  0% 
+    -webkit-transform: rotate(0deg)
+  
+  100% 
+    -webkit-transform: rotate(360deg)
+  
+
+@keyframes spin 
+  0% 
+    transform: rotate(0deg)
+  
+  100% 
+    transform: rotate(360deg)
+  
+
+@-webkit-keyframes spin-reverse 
+  0% 
+    -webkit-transform: rotate(0deg)
+  
+  100% 
+    -webkit-transform: rotate(-360deg)
+  
+
+@keyframes spin-reverse 
+  0% 
+    transform: rotate(0deg)
+  
+  100% 
+    transform: rotate(-360deg)
+@media screen and (max-width: 991px)
+  .app_hero
+    p.Glitch_item__lY5gb
+      font-size: 4rem !important
+    .download-resume-area
+      .resume-btn
+        transform: scale(.7) 
+@media screen and (max-width: 767px)
+  .app_hero
+    .download-resume-area
+      .resume-btn
+        transform: scale(.8) 
+@media screen and (max-width: 575px)
+  .app_hero
+    position: relative
+    .tag-placeholder
+        margin-left: 0 !important
+    .name
+        display: flex
+        flex-direction: column
+        align-items: center
+        &::before,
+        &::after
+            position: absolute
+            color: $text-grey
+            left: 50%
+            transform: translateX(-50%)
+        p
+          font-size: 2.25rem !important
+          line-height: 0rem
+          margin: 3rem
+          text-align: center !important
+          &:first-of-type
+            margin-bottom: 0 !important
+
+

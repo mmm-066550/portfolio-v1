@@ -1,4 +1,4 @@
-@import './variables'
+@import '../styles/variables'
 
 
 html[data-theme='dark'],:root
@@ -10,18 +10,18 @@ html[data-theme='light']
 
     
 
-:root,.blue
+body[data-color='blue'],:root
   --main-color: #{$blue}
   $main-color-trans: rgba($blue,$trans-ratio)
   --main-color-trans: #{$main-color-trans}
-// .green
-//   --main-color: #{$green}
-//   $main-color-trans: rgba($green,$trans-ratio)
-//   --main-color-trans: #{$main-color-trans}
-// .red
-//   --main-color: #{$red}
-//   $main-color-trans: rgba($red,$trans-ratio)
-//   --main-color-trans: #{$main-color-trans}
+body[data-color='green']
+  --main-color: #{$green}
+  $main-color-trans: rgba($green,$trans-ratio)
+  --main-color-trans: #{$main-color-trans}
+body[data-color='red']
+  --main-color: #{$red}
+  $main-color-trans: rgba($red,$trans-ratio)
+  --main-color-trans: #{$main-color-trans}
 
 body
     font-family: $main-font
@@ -31,13 +31,20 @@ body
     background-color: var(--color-page-background)
     color: var(--color-text)
     overflow-x: hidden !important
-    height: 10000px
 ul
     padding: 0
     margin: 0
     list-style: none
 a
     text-decoration: none
+.blue
+  background: $blue !important
+.red    
+  background: $red !important
+.green 
+  background: $green !important
+
+
 .kursor
   border-width: 2px !important
   background: var(--main-color-trans)
@@ -135,6 +142,22 @@ section
   max-width: 1440px
   padding-right: 15px
   padding-left: 15px
+.portfolio.aos-animate
+  &::after
+    height: 100px
+
+span.swiper-pagination-bullet
+    opacity: 1 !important
+    width: 15px !important
+    height: 15px !important
+    margin: .75rem 0 !important
+    border-radius: 0 !important
+    transform: rotate(45deg)
+    border: 3px solid var(--main-color)
+    background: var(--main-color-trans)
+    transition: $transition
+span.swiper-pagination-bullet.swiper-pagination-bullet-active
+    background: var(--main-color)
 @media screen  and (min-width: 1200px)
     .container 
       width: 100%

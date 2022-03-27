@@ -1,0 +1,45 @@
+@import '../../styles/variables'
+
+.social_lists_container
+    position: fixed
+    width: 100%
+    left: 0
+    bottom: 0
+    .lists_container
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+    .social_list
+        display: flex
+        align-items: center
+        flex-direction: column
+        width: 10px !important
+        &::after
+            margin-top: 1rem
+            content: ''
+            display: block
+            height: 100px
+            width: 1px
+            background: $text-grey
+        .social_list_item
+            margin: 0.5rem 0
+            &:hover
+                .social_link
+                    color: var(--main-color) !important
+        .social_link
+            display: block
+            transition: $transition
+            text-decoration: none
+            color:  $text-grey !important
+            svg
+                font-size: $icon-size
+    .left_list
+        .social_list_item
+            &:hover
+                .social_link
+                        transform: translateY(-5px) !important
+    .right_list
+        .social_link
+            text-align: left
+            writing-mode: tb
+

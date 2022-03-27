@@ -1,0 +1,85 @@
+@import '../../styles/variables'
+
+.project_view
+    position: relative
+    &:hover
+        .project_thumbnail
+            background: transparent
+            img
+                mix-blend-mode: normal !important
+                opacity: 1 !important
+    .project_info
+        display: flex
+        flex-direction: column
+        z-index: 2
+        .project_number
+            font-family: $sec-font
+            font-size: 1.1rem
+            margin: 0
+            span
+                color: var(--main-color)
+        .project_name
+            font-size: 1.75rem
+            text-transform: capitalize
+            font-weight: 500
+        .project_tools
+            display: flex
+            flex-wrap: wrap
+            max-width: 320px
+            span
+                font-size: 14px
+                line-height: 24px
+                margin-right: 0.75rem
+                color: $text-grey
+                text-transform: capitalize
+        .project_img
+            background-color: var(--main-color)
+            border-radius: .6rem 
+            overflow: hidden 
+            position: relative
+            img
+                mix-blend-mode: luminosity
+        .project_overview
+            color: var(--color-page-background)
+            background: var(--main-color)
+            padding: 1rem 1.75rem
+            font-weight: 500
+            border-radius: .5rem
+            max-width: 500px
+        .project_links
+            display: flex
+            padding-left: 1px
+            a
+                color: var(--color-text)
+                padding: 1rem
+                padding-left: 0
+                margin-right: 1rem
+                font-size: 1.5rem
+    .project_thumbnail
+        border-radius: .75rem
+        overflow: hidden
+        margin-top: -1rem
+        position: absolute
+        top: 50
+        right: 0
+        width: calc( 50% + 12% )
+        height: 83%
+        z-index: -2
+        background-color: var(--main-color)
+        img
+            background: #000
+            mix-blend-mode: luminosity
+
+@media screen and (min-width: 991px) 
+    .project_view.invert
+        flex-direction: row-reverse
+        .project_info
+            align-items: flex-end
+        .project_thumbnail
+            right: auto
+            left: 0
+        .project_info
+            text-align: right
+        .project_links
+            justify-content: flex-end
+            

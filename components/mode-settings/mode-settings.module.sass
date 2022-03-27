@@ -1,0 +1,37 @@
+@import '../../styles/variables'
+
+.mode_settings_area
+    color: $text-grey !important
+    position: fixed
+    width: 100%
+    left: 0
+    top: 0
+    .container
+        display: flex
+        justify-content: space-between
+        .mode,.color_select
+            display: flex
+            flex-direction: column-reverse
+            justify-content: flex-end
+            align-items: center
+            &::after
+                margin-bottom: 1rem
+                content: ''
+                display: block
+                height: 30px
+                width: 1px
+                background: $text-grey !important
+        .mode_change_btn,
+        .color_change_btn
+            all: unset
+            cursor: pointer
+            font-size: $icon-size
+        .colors
+            .color
+                cursor: pointer
+                width: 15px
+                height: 15px
+                background: red
+                margin: 0.75rem 0
+                border-radius: 50%
+            

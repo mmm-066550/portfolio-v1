@@ -1,0 +1,26 @@
+@import '../../styles/variables'
+
+.about
+    position: relative
+    .skills
+        display: flex
+    .skills_list
+        .skill_item
+            position: relative
+            margin: .25rem 0
+            margin-right: 1.75rem
+            padding-left: 1.5rem  
+            &::before
+                content: ''
+                position: absolute
+                left: 0
+                top: 50%
+                width: 10px
+                height: 10px
+                border: 1px solid var(--main-color)
+                transform: translateY(-50%) rotate(45deg)
+
+@media screen and (max-width: 575px)
+    .about
+        .skills
+            flex-direction: column !important
