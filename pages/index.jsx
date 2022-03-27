@@ -31,7 +31,7 @@ export default function App(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Actual Page Components Wrapper Area */}
-      {/* <SocialLists data={props.links} />
+      <SocialLists data={props.links} />
       <ModeSettings />
       <main id="app-main" className={styles.container}>
         <div className="row g-0">
@@ -43,14 +43,14 @@ export default function App(props) {
             <Portfolio data={props.projects} />
           </div>
         </div>
-      </main> */}
+      </main>
     </>
   );
 }
 
-// export async function getStaticProps() {
-// const res = await axios.get("https://moustapha.me/api/data");
-// return {
-// props: res.data,
-// };
-// }
+export async function getStaticProps() {
+  const res = await axios.get("http://localhost:3000/api/data");
+  return {
+    props: res.data,
+  };
+}
