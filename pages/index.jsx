@@ -49,7 +49,7 @@ export default function App(props) {
 }
 
 export async function getStaticProps() {
-  const res = await axios.get("http://0.0.0.0:3000/api/data");
+  const res = await axios.get("https://moustapha.me/api/data");
   return {
     props: res.data,
   };
