@@ -3,7 +3,6 @@ import styles from "./index.module.sass";
 import { useEffect } from "react";
 import AOS from "aos";
 import axios from "axios";
-import nodeFetch from "node-fetch";
 
 // COMPONENT
 import Navbar from "../components/navbar";
@@ -32,32 +31,26 @@ export default function App(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Actual Page Components Wrapper Area */}
-      {props.projects && (
-        <>
-          <SocialLists data={props.links} />
-          <ModeSettings />
-          <main id="app-main" className={styles.container}>
-            <div className="row g-0">
-              <div className="offset-1 col-10">
-                <Navbar data={props.sections} />
-                <Hero data={props.info} />
-                <About data={props.about} />
-                <Education data={props.education} />
-                <Portfolio data={props.projects} />
-              </div>
-            </div>
-          </main>
-        </>
-      )}
+      <SocialLists data={props.links} />
+      <ModeSettings />
+      <main id="app-main" className={styles.container}>
+        <div className="row g-0">
+          <div className="offset-1 col-10">
+            <Navbar data={props.sections} />
+            <Hero data={props.info} />
+            <About data={props.about} />
+            <Education data={props.education} />
+            <Portfolio data={props.projects} />
+          </div>
+        </div>
+      </main>
     </>
   );
 }
 
-// export async function getServerSideProps() {
-//   const res = await nodeFetch("http://localhost:3000/api/data")
-//     .then((res) => res.json())
-//     .then((data) => data);
-//   return {
-//     props: res,
-//   };
-// }
+export async function getStaticProps() {
+  const res = await axios.get("http://localhost:3000/api/data");
+  return {
+    props: res.data,
+  };
+}
