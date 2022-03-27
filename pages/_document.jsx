@@ -12,9 +12,8 @@ export default function Document() {
           crossOrigin="true"
         />
         <link
-          rel="preload"
           href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=optional"
-          as="font"
+          rel="stylesheet"
         />
       </Head>
       <body data-color="blue">
