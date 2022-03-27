@@ -14,12 +14,11 @@ import About from "../components/about";
 import Education from "../components/education";
 import Portfolio from "../components/portfolio";
 import ModeSettings from "../components/mode-settings";
-import { useLayoutEffect } from "react";
 
 export default function App(props) {
   const { theme } = useTheme();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     typeof window !== "undefined" &&
       new kursor({
         type: 4,
@@ -38,8 +37,6 @@ export default function App(props) {
 
   return (
     <>
-      <Script src="https://unpkg.com/kursor"></Script>
-
       {/* Website Head Paet And Meta Tags Container */}
       <Head>
         <meta charset="utf-8" />
@@ -70,6 +67,10 @@ export default function App(props) {
         <meta property="og:url" content="https://moustapha.me" />
         <meta property="og:type" content="website" />
       </Head>
+      <Script
+        src="https://unpkg.com/kursor"
+        strategy="beforeInteractive"
+      ></Script>
       {/* Actual Page Components Wrapper Area */}
       <SocialLists data={props.links} />
       <ModeSettings />
