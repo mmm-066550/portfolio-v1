@@ -3,6 +3,7 @@ import styles from "./hero.module.sass";
 import Glitch from "../glitch";
 import AnimatedLine from "../animated-line";
 import { RandomReveal } from "react-random-reveal";
+import Link from "next/link";
 
 export default function Hero({ data }) {
   return (
@@ -58,22 +59,24 @@ export default function Hero({ data }) {
             <div
               className={`${styles.download_resume_area} justify-content-center justify-content-md-end`}
             >
-              <a href="/#" className={styles.resume_btn}>
-                <span className={styles.outer}>
-                  <span className={styles.arch}></span>
-                  <span className={styles.inner}>
-                    <span className={styles.tag}>
-                      {
-                        <RandomReveal
-                          isPlaying
-                          duration={3}
-                          characters="Download CV"
-                        />
-                      }
+              <Link href={"/#"}>
+                <a className={styles.resume_btn}>
+                  <span className={styles.outer}>
+                    <span className={styles.arch}></span>
+                    <span className={styles.inner}>
+                      <span className={styles.tag}>
+                        {
+                          <RandomReveal
+                            isPlaying
+                            duration={3}
+                            characters="Download CV"
+                          />
+                        }
+                      </span>
                     </span>
                   </span>
-                </span>
-              </a>
+                </a>
+              </Link>
             </div>
           </div>
         </div>

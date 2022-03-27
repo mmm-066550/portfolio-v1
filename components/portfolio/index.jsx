@@ -13,10 +13,9 @@ import { BsChevronDoubleRight, BsChevronDoubleLeft } from "react-icons/bs";
 export default function Portfolio({ slider, data }) {
   return (
     <div
-      className="pt-xl-4"
       data-aos
       id="portfolio"
-      className={`${styles.portfolio} portfolio `}
+      className={`${styles.portfolio} pt-xl-4 portfolio `}
     >
       {slider ? (
         <div className={`d-none d-xl-flex ${styles.fixed}`}>
