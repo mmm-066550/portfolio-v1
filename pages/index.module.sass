@@ -1,0 +1,29 @@
+.container
+    max-width: 1440px !important
+    padding-right: 30px !important
+    padding-left: 30px !important
+    &::after,
+    &::before
+        opacity: 0.3
+        z-index: -1
+        position: fixed
+        left: 42%
+        top: 0
+        content: ''
+        width: 130px
+        height: 100%
+        background: var(--main-color-trans)
+        transform: translateX(-50%)
+    &::after
+        left: 58%
+html[data-theme='light']
+    .container
+      &::after,
+        &::before
+            opacity: .8
+@media screen  and (min-width: 1200px)
+    .container 
+        width: 100% !important
+        margin: auto !important
+        padding-left: 65px !important
+        padding-right: 65px !important

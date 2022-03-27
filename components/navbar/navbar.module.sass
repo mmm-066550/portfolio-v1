@@ -1,0 +1,70 @@
+@import '../../styles/variables'
+.app_navbar
+    .row
+        align-items: center
+        position: relative
+        &::before,
+        &::after
+            left: -25px
+            position: absolute
+            color: $text-grey
+        &::after
+            top: 0
+            content: '<nav>'
+        &::before
+            content: '</nav>'
+            bottom: 0
+    .right_nav_list,
+    .left_nav_list
+        display: flex
+        flex-direction: column
+        .nav_list_item
+            &:first-of-type
+                margin-bottom: -2px
+            .app_nav_link
+                text-decoration: none
+                color: var(--color-text)
+                padding: 0.75rem 0
+                display: inline-block
+                transition: $transition
+                text-transform: capitalize
+                position: relative
+                &::before
+                    z-index: -1
+                    content: ''
+                    left: 50%
+                    top: 0
+                    position: absolute
+                    width: 0%
+                    height: 100%
+                    transform: translateX(-50%)
+                    transition: $transition
+                    border: 2px solid transparent
+                &:hover
+                    color: var(--main-color)
+                    padding: 0.75rem 2rem
+                    &::before
+                        width: 100%
+                        height: 100%
+                        border: 2px solid var(--main-color)
+                        background: var(--main-color-trans)
+                span
+                    color: var(--main-color)
+                    font-weight: 500
+    .right_nav_list
+        align-items: flex-end
+    .app_logo
+        a
+            p
+                text-transform: uppercase 
+                color: var(--color-text) !important
+                font-size: 2rem !important
+                font-family: $sec-font
+                margin: 0 !important
+@media screen and (max-width: 575px)
+    .app_navbar
+        .row
+            &::before,
+            &::after
+                left: 50%
+                transform: translateX(-50%)
