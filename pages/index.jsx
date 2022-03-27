@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import getAllData from "../utils/fetchAllData";
 import { useTheme } from "next-themes";
+import Script from "next/script";
 
 // COMPONENT
 import Navbar from "../components/navbar";
@@ -66,6 +67,7 @@ export default function App(props) {
         <meta property="og:image" content="/me.jpg" />
         <meta property="og:url" content="https://moustapha.me" />
         <meta property="og:type" content="website" />
+        <Script src="https://unpkg.com/kursor"></Script>
       </Head>
       {/* Actual Page Components Wrapper Area */}
       <SocialLists data={props.links} />
