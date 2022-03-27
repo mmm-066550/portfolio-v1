@@ -71,6 +71,10 @@ export default function App(props) {
         src="https://unpkg.com/kursor"
         strategy="beforeInteractive"
       ></Script>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-F1W0VD5PFT"
+      ></script>
       {/* Actual Page Components Wrapper Area */}
       <SocialLists data={props.links} />
       <ModeSettings />

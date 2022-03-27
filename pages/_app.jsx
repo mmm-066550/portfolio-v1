@@ -4,12 +4,25 @@ import "aos/dist/aos.css";
 import "/styles/fonts.sass";
 import "/styles/global.sass";
 import { ThemeProvider } from "next-themes";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider defaultTheme="dark" enableSystem={false}>
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_CODE}`}
+      />
+      <Script strategy="lazyOnload">
+        {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.GOOGLE_ANALYTICS_CODE}');`}
+      </Script>
+      <ThemeProvider defaultTheme="dark" enableSystem={false}>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </>
   );
 }
 
