@@ -80,7 +80,6 @@ export default function App(props) {
             <Portfolio data={props.projects} />
           </div>
         </div>
-        <script src="https://unpkg.com/kursor"></script>
       </main>
     </>
   );
