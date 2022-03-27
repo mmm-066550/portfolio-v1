@@ -31,19 +31,23 @@ export default function App(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Actual Page Components Wrapper Area */}
-      <SocialLists data={props.links} />
-      <ModeSettings />
-      <main id="app-main" className={styles.container}>
-        <div className="row g-0">
-          <div className="offset-1 col-10">
-            <Navbar data={props.sections} />
-            <Hero data={props.info} />
-            <About data={props.about} />
-            <Education data={props.education} />
-            <Portfolio data={props.projects} />
-          </div>
-        </div>
-      </main>
+      {props.projects && (
+        <>
+          <SocialLists data={props.links} />
+          <ModeSettings />
+          <main id="app-main" className={styles.container}>
+            <div className="row g-0">
+              <div className="offset-1 col-10">
+                <Navbar data={props.sections} />
+                <Hero data={props.info} />
+                <About data={props.about} />
+                <Education data={props.education} />
+                <Portfolio data={props.projects} />
+              </div>
+            </div>
+          </main>
+        </>
+      )}
     </>
   );
 }
