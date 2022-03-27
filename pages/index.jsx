@@ -3,6 +3,7 @@ import styles from "./index.module.sass";
 import { useEffect } from "react";
 import AOS from "aos";
 import axios from "axios";
+import nodeFetch from "node-fetch";
 
 // COMPONENT
 import Navbar from "../components/navbar";
@@ -53,8 +54,10 @@ export default function App(props) {
 }
 
 export async function getServerSideProps() {
-  const res = await axios.get("http://localhost:3000/api/data");
+  const res = await nodeFetch("http://localhost:3000/api/data")
+    .then((res) => res.json())
+    .then((data) => data);
   return {
-    props: res.data,
+    props: res,
   };
 }
