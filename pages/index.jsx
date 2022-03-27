@@ -48,7 +48,7 @@ export default function App(props) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await axios.get("http://localhost:3000/api/data");
   return {
     props: res.data,
