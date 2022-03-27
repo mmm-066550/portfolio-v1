@@ -66,6 +66,7 @@ export default function App(props) {
         <meta property="og:image" content="/me.jpg" />
         <meta property="og:url" content="https://moustapha.me" />
         <meta property="og:type" content="website" />
+        <script src="https://unpkg.com/kursor"></script>
       </Head>
       {/* Actual Page Components Wrapper Area */}
       <SocialLists data={props.links} />

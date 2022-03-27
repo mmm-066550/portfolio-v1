@@ -9,7 +9,6 @@ export default function Document() {
           rel="stylesheet"
           href="https://unpkg.com/kursor/dist/kursor.css"
         />
-        <script src="https://unpkg.com/kursor"></script>
       </Head>
       <body data-color="blue">
         <Main></Main>
