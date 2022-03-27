@@ -11,13 +11,13 @@ function MyApp({ Component, pageProps }) {
     <>
       <Script
         strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_CODE}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-GY3LQ5SDG9`}
       />
       <Script id={"google-analytics"} strategy="lazyOnload">
         {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', ${process.env.GOOGLE_ANALYTICS_CODE});`}
+          gtag('config', 'G-GY3LQ5SDG9');`}
       </Script>
       <ThemeProvider defaultTheme="dark" enableSystem={false}>
         <Component {...pageProps} />

@@ -39,7 +39,6 @@ export default function App(props) {
     <>
       {/* Website Head Paet And Meta Tags Container */}
       <Head>
-        <meta charset="utf-8" />
         <title>Moustapha&#39;s Portfolio</title>
         <meta
           name="theme-color"
