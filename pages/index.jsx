@@ -48,9 +48,9 @@ export default function App(props) {
   );
 }
 
-// export async function getServerSideProps() {
-//   const res = await axios.get("http://localhost:3000/api/data");
-//   return {
-//     props: res.data,
-//   };
-// }
+export async function getServerSideProps() {
+  const res = await axios.get("http://localhost:3000/api/data");
+  return {
+    props: res.data,
+  };
+}
