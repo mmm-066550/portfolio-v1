@@ -48,9 +48,9 @@ export default function App(props) {
   );
 }
 
-export async function getStaticProps() {
-  // const res = await axios.get("https://moustapha.me/api/data");
-  // return {
-  // props: res.data,
-  // };
-}
+// export async function getStaticProps() {
+// const res = await axios.get("https://moustapha.me/api/data");
+// return {
+// props: res.data,
+// };
+// }
