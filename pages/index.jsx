@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "./index.module.sass";
 import { useEffect } from "react";
 import AOS from "aos";
-import axios from "axios";
+import getAllData from "../utils/fetchAllData";
 
 // COMPONENT
 import Navbar from "../components/navbar";
@@ -48,9 +48,9 @@ export default function App(props) {
   );
 }
 
-export async function getServerSideProps() {
-  const res = await axios.get("http://localhost:3000/api/data");
+export async function getStaticProps() {
+  const data = getAllData();
   return {
-    props: res.data,
+    props: data,
   };
 }
