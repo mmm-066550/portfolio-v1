@@ -4,7 +4,13 @@ import { Html, Head, NextScript, Main } from "next/document";
 export default function Document() {
   return (
     <Html>
-      <Head></Head>
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/kursor/dist/kursor.css"
+        />
+        <script src="https://unpkg.com/kursor"></script>
+      </Head>
       <body data-color="blue">
         <Main></Main>
         <NextScript></NextScript>
