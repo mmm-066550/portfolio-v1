@@ -53,11 +53,11 @@ export default function App(props) {
   );
 }
 
-export async function getServerSideProps() {
-  const res = await nodeFetch("http://localhost:3000/api/data")
-    .then((res) => res.json())
-    .then((data) => data);
-  return {
-    props: res,
-  };
-}
+// export async function getServerSideProps() {
+//   const res = await nodeFetch("http://localhost:3000/api/data")
+//     .then((res) => res.json())
+//     .then((data) => data);
+//   return {
+//     props: res,
+//   };
+// }
