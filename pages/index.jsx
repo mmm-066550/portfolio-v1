@@ -38,6 +38,8 @@ export default function App(props) {
 
   return (
     <>
+      <Script src="https://unpkg.com/kursor"></Script>
+
       {/* Website Head Paet And Meta Tags Container */}
       <Head>
         <meta charset="utf-8" />
@@ -67,7 +69,6 @@ export default function App(props) {
         <meta property="og:image" content="/me.jpg" />
         <meta property="og:url" content="https://moustapha.me" />
         <meta property="og:type" content="website" />
-        <Script src="https://unpkg.com/kursor"></Script>
       </Head>
       {/* Actual Page Components Wrapper Area */}
       <SocialLists data={props.links} />
