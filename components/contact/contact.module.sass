@@ -1,0 +1,28 @@
+// @import '../../styles/variables'
+
+.contact_form_wrapper
+    position: relative
+    min-height: 300px
+    .social_link_styled
+        display: flex
+        background: teal
+        min-height: 125px
+        width: 125px
+        border: 5px solid var(--main-color)
+        background: var(--main-color-trans)
+        transform: rotate(45deg)
+        color: var(--main-color)
+        align-items: center
+        justify-content: center
+        transition: all linear .3s
+        font-size: 3rem
+        color: var(--color-text)
+        svg
+            transform: rotate(-45deg) !important
+        &:hover
+            background: var(--main-color)
+    .contact_info
+        svg
+            color: var(--main-color)
+            font-size: 3rem
+            margin-right: 1.25rem

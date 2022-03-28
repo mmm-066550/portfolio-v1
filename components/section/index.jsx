@@ -8,7 +8,7 @@ export default function Section({ head, children, dir }) {
     <section
       className={`${styles.app_section} ${
         (head === "education" && education) ||
-        (head === "contact" && contact) ||
+        (head === "contact with me" && contact) ||
         (head === "my portfolio" && portfolio)
       } ${dir === "ltr" && styles.right_bg}`}
     >

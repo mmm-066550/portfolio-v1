@@ -14,6 +14,7 @@ import About from "../components/about";
 import Education from "../components/education";
 import Portfolio from "../components/portfolio";
 import ModeSettings from "../components/mode-settings";
+import Contact from "../components/contact";
 
 export default function App(props) {
   const { theme } = useTheme();
@@ -81,6 +82,7 @@ export default function App(props) {
             <About data={props.about} />
             <Education data={props.education} />
             <Portfolio data={props.projects} />
+            <Contact data={props.links} />
           </div>
         </div>
       </main>
