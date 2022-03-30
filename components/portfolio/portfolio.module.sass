@@ -48,6 +48,45 @@
                 visibility: hidden
                 user-select: none
                 cursor: not-allowed
+.slider_toggle
+    display: flex
+    align-items: center
+    span
+        margin: 0 1rem
+    svg
+        font-size: 24px
+    input
+        all: unset
+        width: 35px
+        height: 12.5px
+        border-radius: 1000px
+        border: 1px solid var(--main-color)
+        border-color: $text-grey
+        background: $text-grey
+        position: relative
+        transition: all linear .3s
+        &:checked
+            background: var(--main-color-trans)
+            border-color: var(--main-color-trans)
+        &::after
+            content: ''
+            position: absolute
+            width: 20px
+            height: 20px
+            box-shadow: 1px 1px 5px #0000008a
+            top: 50%
+            transform: translateY(-50%)
+            border-radius: 50%
+            background: var(--color-text)
+            left: -1px
+            transition: all linear .3s
+        &:checked
+            &::after
+                // left: -1px
+                left: calc(100% - 20px)
+                // transform: translateX(-50%)
+                // right: -1px
+                background: var(--main-color)
 .fixed
     z-index: 10
     position: absolute

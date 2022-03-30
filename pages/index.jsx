@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "./index.module.sass";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import getAllData from "../utils/fetchAllData";
 import { useTheme } from "next-themes";
@@ -17,6 +17,7 @@ import ModeSettings from "../components/mode-settings";
 import Contact from "../components/contact";
 
 export default function App(props) {
+  const [slider, setSlider] = useState(false);
   const { theme } = useTheme();
 
   useEffect(() => {
@@ -81,7 +82,11 @@ export default function App(props) {
             <Hero data={props.info} />
             <About data={props.about} />
             <Education data={props.education} />
-            <Portfolio data={props.projects} />
+            <Portfolio
+              data={props.projects}
+              slider={slider}
+              setSlider={setSlider}
+            />
             <Contact data={props.links} />
           </div>
         </div>

@@ -9,8 +9,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { BsChevronDoubleRight, BsChevronDoubleLeft } from "react-icons/bs";
+import { BiSliderAlt } from "react-icons/bi";
 
-export default function Portfolio({ slider, data }) {
+export default function Portfolio({ slider, data, setSlider }) {
   return (
     <div
       data-aos
@@ -28,9 +29,21 @@ export default function Portfolio({ slider, data }) {
       <Section dir="rtl" head="my portfolio">
         <div className="col">
           <div className="works-area">
-            <p data-aos="fade-right" className="sec-title">
-              <span>03.</span>Somethings I’ve Built
-            </p>
+            <div className="d-flex justify-content-between">
+              <p data-aos="fade-right" className="sec-title">
+                <span>03.</span>Somethings I’ve Built
+              </p>
+              <div className={styles.slider_toggle}>
+                <input
+                  type="checkbox"
+                  onChange={(e) => {
+                    e.target.checked ? setSlider(true) : setSlider(false);
+                  }}
+                />
+                <span className="d-none d-md-inline-block">Slider</span>
+                <BiSliderAlt className="me-3 m-md-0" />
+              </div>
+            </div>
             <div
               id="portfolio-works-container"
               className={styles.portfolio_works_container}
