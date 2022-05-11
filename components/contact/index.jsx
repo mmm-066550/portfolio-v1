@@ -4,7 +4,7 @@ import styles from "./contact.module.sass";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlineLocationMarker } from "react-icons/hi";
-import { FiGithub } from "react-icons/fi";
+import { SiUpwork } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsFacebook, BsWhatsapp } from "react-icons/bs";
 
@@ -52,11 +52,11 @@ export default function Contact({ data }) {
                       <a
                         className={styles.social_link_styled}
                         target={"_blank"}
-                        title="Github"
+                        title="Upwork"
                         rel="noreferrer"
-                        href={data.github}
+                        href={data.upwork}
                       >
-                        <FiGithub />
+                        <SiUpwork />
                       </a>
                     </div>
                     <div className="col-12 col-md-6 align-items-center d-flex justify-content-center my-5">
