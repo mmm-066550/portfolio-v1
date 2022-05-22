@@ -6,7 +6,7 @@
     "live_preview": "https://axies-nft.netlify.app",
     "repo": "https://github.com/mmm-066550/Axies-NFT-nextJs",
     "thubmnail": "/assets/images/projects/axies_light.png",
-    "overview": "Axies is the NFT Marketplace for traders and creators. Built with NextJS, Bootstrap and Material UI"
+    "overview": "🐵💲 Axies is the NFT Marketplace for traders and creators. Built with NextJS, Bootstrap and Material UI"
   },
   {
     "index": 2,
@@ -56,6 +56,6 @@
     "live_preview": "https://mebook-app.netlify.app",
     "repo": "https://github.com/mmm-066550/MEBOOK-Client",
     "thubmnail": "/assets/images/projects/mebook.png",
-    "overview": "(📚 MEBOOK) e-books store Website app with ReactJs and ReduxJs (client-side) and NodeJS for backend server (API)"
+    "overview": "📚 MEBOOK is e-books store Website app with ReactJs and ReduxJs (client-side) and NodeJS for backend server (API)"
   }
 ]
