@@ -59,7 +59,7 @@ export default function Hero({ data }) {
             <div
               className={`${styles.download_resume_area} justify-content-center justify-content-md-end`}
             >
-              <Link target="__blank" href={"https://drive.google.com/file/d/18LaI4apHUl3qZj0FemgCwyaFIgGGJrrk/view?usp=sharing"}>
+              <Link target="__blank" href={data.resume}>
                 <a target="__blank" className={styles.resume_btn}>
                   <span className={styles.outer}>
                     <span className={styles.arch}></span>
