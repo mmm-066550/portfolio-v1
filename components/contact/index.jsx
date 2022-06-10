@@ -20,7 +20,7 @@ export default function Contact({ data }) {
           </div>
           <div className={styles.contact_form_wrapper}>
             <div className="row ps-lg-5 align-items-center">
-              <div className="col-12 col-lg-6  ps-lg-5 " data-aos="fade-right">
+              <div className="col-12 col-lg-6  ps-lg-5 " data-aos="fade-bottom">
                 <div className={styles.contact_info}>
                   <div className="my-3 d-flex align-items-center">
                     <BsTelephone />
@@ -45,7 +45,7 @@ export default function Contact({ data }) {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-lg-6" data-aos="fade-left">
+              <div className="col-12 col-lg-6" data-aos="fade-top">
                 <div className={styles.social_contact_links}>
                   <div className="row align-items-center justify-content-center">
                     <div className="col-12 col-md-6 align-items-center d-flex justify-content-center my-5">
