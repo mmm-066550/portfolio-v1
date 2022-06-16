@@ -31,7 +31,7 @@ export default function Portfolio({ slider, data, setSlider }) {
           <div className="works-area">
             <div className="d-flex justify-content-between">
               <p data-aos="fade-right" className="sec-title">
-                <span>03.</span>Somethings I’ve Built
+                <span>03.</span>What I’ve Built
               </p>
               <div className={styles.slider_toggle}>
                 <input
