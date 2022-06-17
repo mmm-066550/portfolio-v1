@@ -49,7 +49,7 @@ export default function App(props) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="I'm Moustapha Mahmoud, A Passionate Junior FullStack (MERN) Developer. Interested in ReactJs, NextJs, NodeJs, PostgresSQL and MongoDB, and this is my portfolio (mmm066550)"
+          content="mmm066550 • I'm Moustapha Mahmoud, A Passionate Junior FullStack (MERN) Developer. Interested in ReactJs, NextJs, NodeJs, PostgresSQL and MongoDB, and this is my portfolio • mmm066550"
         />
         <meta
           name="keyword"
@@ -57,7 +57,7 @@ export default function App(props) {
         ></meta>
         <meta
           property="og:title"
-          content="Moustapha Mahmoud | MERN Stack Developer • NextJs | ReactJs | NodeJs | ExpressJs | MongoDB | PostgresSQL"
+          content="Moustapha Mahmoud | MERN Stack Developer • NextJs | ReactJs | Typescript | NodeJs | ExpressJs | MongoDB | PostgresSQL"
         />
         <meta
           property="og:description"
