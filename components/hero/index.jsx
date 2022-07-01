@@ -17,7 +17,7 @@ export default function Hero({ data }) {
             data-aos="fade-up"
             className="pt-md-5 py-2 col-12 col-md-7 text-center text-sm-start"
           >
-            <p className={`m-0 ${styles.tag_placeholder}`}>
+            <p className={`m-0 text-center text-sm-start ${styles.tag_placeholder}`}>
               <span className={styles.tag_span}>{" <p> "}</span>
               <RandomReveal isPlaying duration={3} characters={`Hey it's me`} />
               <span className={styles.tag_span}>{" </p> "}</span>
@@ -42,7 +42,7 @@ export default function Hero({ data }) {
                 }
               </Glitch>
             </div>
-            <p className={`m-0 ${styles.tag_placeholder}`}>
+            <p className={`m-0 text-center text-sm-start ${styles.tag_placeholder}`}>
               <span className={`d-none d-sm-inline ${styles.tag_span}`}>
                 {" <p> "}
               </span>
