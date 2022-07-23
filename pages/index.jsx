@@ -41,7 +41,7 @@ export default function App(props) {
     <>
       {/* Website Head Paet And Meta Tags Container */}
       <Head>
-        <title>Moustapha&#39;s Portfolio</title>
+        <title>Moustapha&#39;s Portfolio • mmm066550</title>
         <meta
           name="theme-color"
           content={theme === "dark" ? "#111119" : "#fff"}
