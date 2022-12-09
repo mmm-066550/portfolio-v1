@@ -58,4 +58,19 @@
     "thubmnail": "/assets/images/projects/mebook.png",
     "overview": "📚 MEBOOK is e-books store Website app with ReactJs and ReduxJs (client-side) and NodeJS for backend server (API)"
   }
+  ,
+  {
+    "index": 5,
+    "title": "PICK-A",
+    "tools": [
+      "ReactJs",
+      "Sass",
+      "Bootstrap",
+      "Axios"
+    ],
+    "live_preview": "https://pick-a.net",
+    "repo": "https://github.com/mmm-066550",
+    "thubmnail": "/assets/images/projects/pick.png",
+    "overview": "🌮🛴 Pick-A"
+  }
 ]
