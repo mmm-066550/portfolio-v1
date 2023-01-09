@@ -71,6 +71,23 @@
     "live_preview": "https://pick-a.net",
     "repo": "https://github.com/mmm-066550",
     "thubmnail": "/assets/images/projects/pick.png",
-    "overview": "🌮🛴 Pick-A"
+    "overview": "🌮🛴 Pick-A (Food Delivery)"
+  },
+  {
+    "index": 6,
+    "title": "NEXT Entertainment TV",
+    "tools": [
+      "ReactJs",
+      "NodeJs",
+      "ExpressJs",
+      "MongoDB",
+      "Redux",
+      "Sass",
+      "Axios"
+    ],
+    "live_preview": "https://nextentertainment.tv",
+    "repo": "https://github.com/mmm-066550",
+    "thubmnail": "/assets/images/projects/next.png",
+    "overview": "📺 NEXT Entertainment TV Website (Streaming & Social Media)"
   }
 ]
