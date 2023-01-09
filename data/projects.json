@@ -3,7 +3,7 @@
     "index": 1,
     "title": "Axies NFT",
     "tools": ["NextJs", "Bootstrap", "Material UI", "Sass"],
-    "live_preview": "https://axies-nft.netlify.app",
+    "live_preview": "https://axiesnft-mmm066550.netlify.app",
     "repo": "https://github.com/mmm-066550/Axies-NFT-nextJs",
     "thubmnail": "/assets/images/projects/axies_light.png",
     "overview": "🐵💲 Axies is the NFT Marketplace for traders and creators. Built with NextJS, Bootstrap and Material UI"
@@ -19,7 +19,7 @@
       "SpotifyApi",
       "spotifySDK"
     ],
-    "live_preview": "https://spotify-nextjs.netlify.app",
+    "live_preview": "https://spotify-mmm066550.netlify.app",
     "repo": "https://github.com/mmm-066550/spotify-nextjs-clone",
     "thubmnail": "/assets/images/projects/spotify-dark.png",
     "overview": "🎧🎵 Spotify clone app using spotify api and spotify SDK with React.js, Next.js and Redux"
@@ -53,7 +53,7 @@
       "Sass",
       "Axios"
     ],
-    "live_preview": "https://mebook-app.netlify.app",
+    "live_preview": "https://mebook-mmm066550.netlify.app",
     "repo": "https://github.com/mmm-066550/MEBOOK-Client",
     "thubmnail": "/assets/images/projects/mebook.png",
     "overview": "📚 MEBOOK is e-books store Website app with ReactJs and ReduxJs (client-side) and NodeJS for backend server (API)"
