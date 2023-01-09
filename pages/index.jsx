@@ -64,7 +64,7 @@ export default function App(props) {
           content="JavaScript, NextJs, NodeJs, ExpressJs, MongoDB"
         />
         <meta property="og:image" content="/me.jpg" />
-        <meta property="og:url" content="https://moustapha.me" />
+        <meta property="og:url" content="https://mmm066550.me" />
         <meta property="og:type" content="website" />
       </Head>
       <Script
