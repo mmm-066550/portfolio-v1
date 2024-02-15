@@ -1,28 +1,20 @@
 [
   {
-    "index": 5,
-    "title": "Axies NFT",
-    "tools": ["NextJs", "Bootstrap", "Material UI", "Sass"],
-    "live_preview": "https://axiesnft-mmm066550.netlify.app",
-    "repo": "https://github.com/mmm-066550/Axies-NFT-nextJs",
-    "thubmnail": "/assets/images/projects/axies_light.png",
-    "overview": "🐵💲 Axies is the NFT Marketplace for traders and creators. Built with NextJS, Bootstrap and Material UI"
-  },
-  {
-    "index": 4,
-    "title": "Spotify Music Clone",
+    "index": 1,
+    "title": "NEXT Entertainment TV",
     "tools": [
-      "NextJs",
       "ReactJs",
-      "Bootstrap",
+      "NodeJs",
+      "ExpressJs",
+      "MongoDB",
+      "Redux",
       "Sass",
-      "SpotifyApi",
-      "spotifySDK"
+      "Axios"
     ],
-    "live_preview": "https://spotify-mmm066550.netlify.app",
-    "repo": "https://github.com/mmm-066550/spotify-nextjs-clone",
-    "thubmnail": "/assets/images/projects/spotify-dark.png",
-    "overview": "🎧🎵 Spotify clone app using spotify api and spotify SDK with React.js, Next.js and Redux"
+    "live_preview": "https://nextentertainment.tv",
+    "repo": "https://github.com/mmm-066550",
+    "thubmnail": "/assets/images/projects/next.png",
+    "overview": "📺 NEXT Entertainment TV Website (Streaming & Social Media)"
   },
   {
     "index": 2,
@@ -57,20 +49,28 @@
     "overview": "🌮🛴 Pick-A (Food Delivery)"
   },
   {
-    "index": 1,
-    "title": "NEXT Entertainment TV",
+    "index": 4,
+    "title": "Spotify Music Clone",
     "tools": [
+      "NextJs",
       "ReactJs",
-      "NodeJs",
-      "ExpressJs",
-      "MongoDB",
-      "Redux",
+      "Bootstrap",
       "Sass",
-      "Axios"
+      "SpotifyApi",
+      "spotifySDK"
     ],
-    "live_preview": "https://nextentertainment.tv",
-    "repo": "https://github.com/mmm-066550",
-    "thubmnail": "/assets/images/projects/next.png",
-    "overview": "📺 NEXT Entertainment TV Website (Streaming & Social Media)"
+    "live_preview": "https://spotify-mmm066550.netlify.app",
+    "repo": "https://github.com/mmm-066550/spotify-nextjs-clone",
+    "thubmnail": "/assets/images/projects/spotify-dark.png",
+    "overview": "🎧🎵 Spotify clone app using spotify api and spotify SDK with React.js, Next.js and Redux"
+  },
+  {
+    "index": 5,
+    "title": "Axies NFT",
+    "tools": ["NextJs", "Bootstrap", "Material UI", "Sass"],
+    "live_preview": "https://axiesnft-mmm066550.netlify.app",
+    "repo": "https://github.com/mmm-066550/Axies-NFT-nextJs",
+    "thubmnail": "/assets/images/projects/axies_light.png",
+    "overview": "🐵💲 Axies is the NFT Marketplace for traders and creators. Built with NextJS, Bootstrap and Material UI"
   }
 ]
