@@ -1,6 +1,6 @@
 [
   {
-    "index": 1,
+    "index": 5,
     "title": "Axies NFT",
     "tools": ["NextJs", "Bootstrap", "Material UI", "Sass"],
     "live_preview": "https://axiesnft-mmm066550.netlify.app",
@@ -9,7 +9,7 @@
     "overview": "🐵💲 Axies is the NFT Marketplace for traders and creators. Built with NextJS, Bootstrap and Material UI"
   },
   {
-    "index": 2,
+    "index": 4,
     "title": "Spotify Music Clone",
     "tools": [
       "NextJs",
@@ -25,24 +25,7 @@
     "overview": "🎧🎵 Spotify clone app using spotify api and spotify SDK with React.js, Next.js and Redux"
   },
   {
-    "index": 3,
-    "title": "Netflix React Clone",
-    "tools": [
-      "ReactJs",
-      "Redux",
-      "Bootstrap",
-      "Sass",
-      "SwiperJs",
-      "TMDB",
-      "2embed"
-    ],
-    "live_preview": "https://netflix-mmm066550.netlify.app",
-    "repo": "https://github.com/mmm-066550/Netflix_React_Clone",
-    "thubmnail": "/assets/images/projects/netflix.png",
-    "overview": "📽🍿 Netflix React Clone is a cloned single page application of Netflix website using ReactJS and ReduxJs for state management "
-  },
-  {
-    "index": 4,
+    "index": 2,
     "title": "MEBOOK",
     "tools": [
       "ReactJs",
@@ -60,7 +43,7 @@
   }
   ,
   {
-    "index": 5,
+    "index": 3,
     "title": "PICK-A",
     "tools": [
       "ReactJs",
@@ -74,7 +57,7 @@
     "overview": "🌮🛴 Pick-A (Food Delivery)"
   },
   {
-    "index": 6,
+    "index": 1,
     "title": "NEXT Entertainment TV",
     "tools": [
       "ReactJs",
